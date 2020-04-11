@@ -73,10 +73,10 @@
                     while (!feof($handle)) {
                         $data .= fgets($handle, 50000);
                     }
-                    $content = mb_convert_encoding($data, "UTF-8", "auto");
+                    $content = iconv("UTF-8", "UTF-8", $data);
                     fclose($handle);
                     $retArray = array();
-                    $dataRows = str_getcsv($content, "\n"); 
+                    $dataRows = str_getcsv($content, "\n");
                     foreach($dataRows as &$row) {
                         array_push($retArray, str_getcsv($row, ";"));
                     }
