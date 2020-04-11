@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <title>fsi - Veranstaltungen SoSe 2020</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="https://www.fsi.uni-tuebingen.de/img/favicon-32x32.png">
         <style type="text/css">
             table.gridtable {
                 font-size:13px;
